@@ -1368,7 +1368,6 @@ footer .flogo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 9px;
 }
 
 @media (max-width: 768px) {
