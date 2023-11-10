@@ -813,13 +813,15 @@ input::after {
 
 .al:hover {
     background: var(--secondary-color);
-    .al .ih4 {
+
+    .al.ih4{
         color: white;
     }
 
-    .al .ip {
+    .al.ip{
         color: white;
     }
+
 }
 
 
