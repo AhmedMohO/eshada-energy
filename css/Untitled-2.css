@@ -552,12 +552,14 @@ input::after {
     font-weight: 700;
     color: rgba(13, 27, 50, 1);
     margin-bottom: 30px;
+    transition: 0.5;
 }
 
 .ip {
     text-align: center;
     font-size: 16px;
     color: rgba(63, 63, 63, 0.6);
+    transition: 0.5;
 }
 
 .infomar {
