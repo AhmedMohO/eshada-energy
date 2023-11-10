@@ -813,15 +813,15 @@ input::after {
 
 .al:hover {
     background: var(--secondary-color);
+    .al .ih4 {
+        color: white;
+    }
+
+    .al .ip {
+        color: white;
+    }
 }
 
-.al .ih4:hover {
-       color: white;
-}
- 
-.al .ip:hover {
-       color: white;
-}
 
 .bullets {
     position: absolute;
