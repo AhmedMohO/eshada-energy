@@ -280,6 +280,10 @@ input::after {
     color: var(--main-color);
 }
 
+.links li a:hover {
+    color: var(--secondary-color);
+}
+
 @media (max-width: 992px) {
     .links {
         display: none;
