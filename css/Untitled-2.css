@@ -1206,7 +1206,7 @@ input::after {
 footer {
     background: var(--main-color);
     z-index: 1;
-    padding: 12px 0;
+    padding: 20px 0;
     direction: ltr;
 }
 
