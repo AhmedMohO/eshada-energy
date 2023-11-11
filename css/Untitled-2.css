@@ -811,17 +811,16 @@ input::after {
     transition: 0.5;
 }
 
-.al:hover{
+.al:hover {
     background: var(--secondary-color);
+}
 
-    .ih4{
-        color: white;
-    }
+.al:hover .ih4 {
+    color: white;
+}
 
-    .ip{
-        color: white;
-    }
-
+.al:hover .ip {
+    color: white;
 }
 
 
