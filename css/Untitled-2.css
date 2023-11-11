@@ -518,6 +518,7 @@ input::after {
     transition: 0.3s;
     overflow: hidden;
     max-height: 348px;
+    z-index: 90;
 }
 
 .pinfo1::before {
