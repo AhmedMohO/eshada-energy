@@ -122,6 +122,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 9999;
 }
 
 .sidebar {
@@ -334,7 +336,7 @@ input::after {
 /* start landing */
 .landing {
     position: relative;
-    padding-top: 77px;
+    padding-top: 125px;
     padding-bottom: 270px;
     max-width: 1920px;
     max-height: 900px;
@@ -563,7 +565,7 @@ input::after {
 }
 
 .infomar {
-    margin-top: 70px;
+    margin-top: 25px;
 }
 
 /* End landing */
