@@ -1268,7 +1268,9 @@ footer .p1 {
 }
 
 footer .flogo {
-    margin-left: 27px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .fsocial {
