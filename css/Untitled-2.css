@@ -1269,7 +1269,6 @@ footer .p1 {
 
 footer .flogo {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
 }
 
