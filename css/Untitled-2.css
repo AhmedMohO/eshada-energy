@@ -1256,9 +1256,10 @@ footer .fcontainer {
 footer .p1 {
     color: #F4F9FF;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 10px;
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -1270,6 +1271,7 @@ footer .p1 {
 footer .flogo {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .fsocial {
