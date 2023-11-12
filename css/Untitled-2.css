@@ -338,7 +338,6 @@ input::after {
     position: relative;
     padding-top: 125px;
     padding-bottom: 270px;
-    max-width: 1920px;
     max-height: 900px;
     margin: 0 auto;
 }
@@ -575,7 +574,6 @@ input::after {
     position: relative;
     padding-top: 210px;
     padding-bottom: 77px;
-    max-width: 1920px;
     margin: 0 auto;
 }
 
