@@ -69,7 +69,7 @@ var observer = new IntersectionObserver(function (entries, observer) {
         if (entry.isIntersecting) {
             entry.target.classList.add("visibility", "visible");
             entry.target.style.animationDuration = "1s";
-            entry.target.style.animationDelay = "0.3s";
+            entry.target.style.animationDelay = "0s";
             entry.target.style.animationName = "zoomInRight";
             observer.unobserve(entry.target);
         }
@@ -84,7 +84,7 @@ targets.forEach(function (target) {
 let observer1 = new IntersectionObserver(function (entries1, observer1) {
     entries1.forEach(function (entry1) {
         if (entry1.isIntersecting) {
-            entry1.target.style.cssText = "visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;";
+            entry1.target.style.cssText = "visibility: visible; animation-duration: 1s; animation-delay: 0s; animation-name: fadeInUp;";
             observer1.unobserve(entry1.target);
         }
     });
