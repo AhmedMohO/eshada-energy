@@ -1,28 +1,6 @@
 let up = document.querySelector(".up");
-let ourSkills = document.querySelector(".our_skills");
 
 window.onscroll = function () {
-
-    let skillsOffsetTop = ourSkills.offsetTop;
-
-    let skillsOuterHeight = ourSkills.offsetHeight;
-
-    let windowHeight = this.innerHeight;
-
-    let windowScrollTop = this.scrollY;
-
-    if (windowScrollTop > (skillsOffsetTop + skillsOuterHeight - windowHeight)) {
-
-        let allSkills = document.querySelectorAll(".perc .percp");
-
-        allSkills.forEach(skill => {
-
-            skill.style.width = skill.dataset.progress;
-
-        });
-
-    }
-
     if (window.scrollY >= 600) {
         up.style.opacity = 1;
         up.style.transform = "scale(1)";
