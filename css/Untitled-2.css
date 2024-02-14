@@ -109,6 +109,29 @@ body {
     position: relative;
 }
 
+.up {
+    border: 2px solid #2196f3;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    position: fixed;
+    display: flex;
+    right: 35px;
+    bottom: 35px;
+    justify-content: center;
+    background-color: #2196f3;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    z-index: 100;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.up i {
+    font-size: 16px;
+}
+
 @keyframes zoomInRight {
     0% {
         opacity: 0;
