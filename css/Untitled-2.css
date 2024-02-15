@@ -33,6 +33,10 @@ a {
     transition: 0.2s;
 }
 
+a:hover {
+    color: white;
+}
+
 .relative {
     position: relative;
 }
