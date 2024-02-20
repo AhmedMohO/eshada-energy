@@ -1,5 +1,7 @@
 let up = document.querySelector(".up");
-
+let nums = document.querySelectorAll(".l2info1 .l2onfo1n1");
+let section = document.querySelector(".landing2");
+let started = false;
 window.onscroll = function () {
     if (window.scrollY >= 600) {
         up.style.opacity = 1;
@@ -7,7 +9,22 @@ window.onscroll = function () {
     } else {
         up.style.transform = "scale(0)";
     }
+    if (window.scrollY >= section.offsetTop) {
+    if (!started) {
+        nums.forEach((num) => startCount(num));
+    }
+    started = true;
+}
 };
+function startCount(el) {
+    let goal = el.dataset.goal;
+    let count = setInterval(() => {
+        el.textContent++;
+        if (el.textContent == goal) {
+            clearInterval(count);
+        }
+    }, 2000 / goal);
+}
 const scrollers = document.querySelectorAll(".scroller");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
