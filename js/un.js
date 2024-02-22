@@ -9,7 +9,7 @@ window.onscroll = function () {
     } else {
         up.style.transform = "scale(0)";
     }
-    if (window.scrollY >= section.offsetTop) {
+    if (window.scrollY >= section.offsetTop - 250) {
     if (!started) {
         nums.forEach((num) => startCount(num));
     }
