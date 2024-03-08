@@ -1547,6 +1547,10 @@ footer .foverlay {
     color: white;
 }
 
+.f2 .flinks a:hover {
+    color: var(--secondary-color);
+}
+
 .footer2 {
     background-color: rgba(0, 50, 117, 1);
     padding: 26px 0;
