@@ -1,6 +1,82 @@
 let up = document.querySelector(".up");
 let nums = document.querySelectorAll(".l2info1 .l2onfo1n1");
 let section = document.querySelector(".landing2");
+// check for saved 'darkMode' in localStorage
+let darkMode = localStorage.getItem('darkMode');
+// Select multiple elements with querySelectorAll
+let BlaDark = document.querySelectorAll(".blogMain, .wh2, .c1 input, body, .footer2, .c1 textarea");
+let iicDark = document.querySelectorAll(".iicon");
+let TextWDark = document.querySelectorAll("h1, h2, h3, h4, h5, p, span, h3 strong, .l2onfo1n1, .l2onfo1t1, .al .ih4, .ih4, .ip, .c1 label,.links li a, .eng, .c1 textarea, .c1 input");
+let backTextWDark = document.querySelectorAll("#next1, #prev1, #next2, #prev2, #pagination,.swiper-pagination-bullet");
+let headerEtcDark = document.querySelectorAll("header, .pinfo1, .blog, .contact .container >.row, .sub_content, .c2 .c2l, .button_hover");
+const darkModeToggle = document.querySelector('#darkmode-toggle');
+const enableDarkMode = () => {
+    // Iterate over each element and add the class
+    BlaDark.forEach(element => {
+        element.classList.add('darkmode');
+    });
+    iicDark.forEach(element => {
+        element.classList.add('darkmode1');
+    });
+    TextWDark.forEach(element => {
+        element.classList.add('darkmode2');
+    });
+    backTextWDark.forEach(element => {
+        element.classList.add('darkmode3');
+    });
+    headerEtcDark.forEach(element => {
+        element.classList.add('darkmode4');
+    });
+    // Update darkMode in localStorage
+    localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+    // Iterate over each element and remove the class
+    BlaDark.forEach(element => {
+        element.classList.remove('darkmode');
+    });
+    iicDark.forEach(element => {
+        element.classList.remove('darkmode1');
+    });
+    TextWDark.forEach(element => {
+        element.classList.remove('darkmode2');
+    });
+    backTextWDark.forEach(element => {
+        element.classList.remove('darkmode3');
+    });
+    headerEtcDark.forEach(element => {
+        element.classList.remove('darkmode4');
+    });
+    // Update darkMode in localStorage
+    localStorage.setItem('darkMode', null);
+}
+
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (localStorage.getItem('darkMode') === 'enabled') {
+    enableDarkMode();
+    darkModeToggle.checked = true;
+}
+
+// When someone clicks the button
+darkModeToggle.addEventListener('click', () => {
+    // Get the current darkMode setting from localStorage
+    let darkMode = localStorage.getItem('darkMode');
+
+    // Toggle darkMode
+    if (darkMode !== 'enabled') {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+    // Toggle darkMode
+    if (darkMode !== 'enabled') {
+        darkModeToggle.checked = true;
+    } else {
+        darkModeToggle.checked = false;
+    }
+});
 
 const swiper = new Swiper('.swiper', {
     loop: true,
