@@ -48,8 +48,7 @@ const disableDarkMode = () => {
         element.classList.remove('darkmode4');
     });
     l2back.forEach(element => {
-
-element.classList.remove('noneBack');
+        element.classList.remove('noneBack');
     });
     localStorage.setItem('darkMode', null);
 }
