@@ -26,7 +26,7 @@ const enableDarkMode = () => {
         element.classList.add('darkmode4');
     });
     l2back.forEach(element => {
-        element.style.display = `none`;
+        elementclassList.add('noneBack');
     });
     localStorage.setItem('darkMode', 'enabled');
 }
@@ -48,7 +48,8 @@ const disableDarkMode = () => {
         element.classList.remove('darkmode4');
     });
     l2back.forEach(element => {
-        element.style.display = `block`;
+
+element.classList.remove('noneBack');
     });
     localStorage.setItem('darkMode', null);
 }
