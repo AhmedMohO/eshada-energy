@@ -101,11 +101,11 @@ const swiper1 = new Swiper('.swip1', {
     breakpoints: {
         480: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 25,
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 25,
         },
     }
 });
