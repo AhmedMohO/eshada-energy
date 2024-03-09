@@ -380,7 +380,7 @@ header:first-of-type .iside {
 }
 
 .links li a:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
 }
 
 @media (max-width: 992px) {
