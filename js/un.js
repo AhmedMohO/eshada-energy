@@ -5,9 +5,9 @@ let darkMode = localStorage.getItem('darkMode');
 let l2back = document.querySelectorAll(".l2back, .lback")
 let BlaDark = document.querySelectorAll(".blogMain, .wh2, .c1 input, body, .footer2, .c1 textarea");
 let iicDark = document.querySelectorAll(".iicon");
-let TextWDark = document.querySelectorAll("h1, h2, h3, h4, h5, p, span, h3 strong, .l2onfo1n1, .l2onfo1t1, .al .ih4, .ih4, .ip, .c1 label,.links li a, .eng, .c1 textarea, .c1 input");
+let TextWDark = document.querySelectorAll("h1, h2, h3, h4, h5, p, span, h3 strong, .l2onfo1n1, .l2onfo1t1, .al .ih4, .ih4, .ip, .c1 label,.links li a, .eng, .c1 textarea, .c1 input, .menu-icon, .sidebar a");
 let backTextWDark = document.querySelectorAll("#next1, #prev1, #next2, #prev2, #pagination,.swiper-pagination-bullet");
-let headerEtcDark = document.querySelectorAll("header, .pinfo1, .blog, .contact .container >.row, .sub_content, .c2 .c2l, .button_hover");
+let headerEtcDark = document.querySelectorAll("header, .pinfo1, .blog, .contact .container >.row, .sub_content, .c2 .c2l, .button_hover, .sidebar");
 const darkModeToggle = document.querySelector('#darkmode-toggle');
 const enableDarkMode = () => {
     BlaDark.forEach(element => {
