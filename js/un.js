@@ -26,7 +26,7 @@ const enableDarkMode = () => {
         element.classList.add('darkmode4');
     });
     l2back.forEach(element => {
-        elementclassList.add('noneBack');
+        element.classList.add('noneBack');
     });
     localStorage.setItem('darkMode', 'enabled');
 }
