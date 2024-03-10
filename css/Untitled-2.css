@@ -1165,6 +1165,12 @@ header:first-of-type .iside {
     z-index: 1;
 }
 
+@media (max-width: 992px) {
+    .sub {
+        top: 90px;
+    }
+}
+
 .sub_content {
     margin: auto;
     border-radius: 141.495px;
@@ -1179,13 +1185,13 @@ header:first-of-type .iside {
 
 @media (max-width: 992px) {
     .sub_content {
-        padding: 20px 60px;
+        padding: 35px 60px;
     }
 }
 
 @media (max-width: 767px) {
     .sub_content {
-        padding: 0 55px;
+        padding: 25px 50px;
     }
 }
 
@@ -1233,7 +1239,7 @@ header:first-of-type .iside {
     flex: 1;
     background-color: #f1f2f3;
     border: none;
-    height: 60px;
+    min-height: 60px;
     border-radius: 30px;
 }
 
